@@ -22,7 +22,7 @@ def valid_url(url):
 #  Замена строк
 def change_data(data):
     # change to "BlackHub Games"
-    req = re.sub(r'\S?(B|b)(l|L)(a|A)(c|C)(k|K)\s*\S*\s*(R|r)(u|U)(s|S)(s|S)(i|I)(a|A)\S?', 'BlackHub Games', data)
+    req = re.sub(r'\S?BlaCk\s*\S*\s*Russia\S?', 'BlackHub Games', data, flags=re.IGNORECASE)
     return req
 
 
